@@ -84,9 +84,47 @@ func twoSum(arr: [Int], targetSum: Int) -> [Int] {
 }
 
 // Test example
-let nums = [2, 7, 11, 15]
+let nums1 = [2, 7, 11, 15]
 let target = 9
-print(twoSum(arr: nums, targetSum: target)) // Output: [0, 1]
+print(twoSum(arr: nums1, targetSum: target)) // Output: [0, 1]
 
 
+
+/*
+ Example 3
+ Problem: Given an integer array `arr` and a positive integer `k`
+ Find the maximum sum of any contiguous subarray of size `k`.
+ */
+
+func maxSumSubarray(arr: [Int], k: Int) -> Int {
+    // Edge case: if array is empty, return 0
+    guard arr.count > 0 else {
+        return 0
+    }
+    
+    // Variable to store the maximum sum found so far
+    var maxSum = 0
+    
+    // Loop over all possible starting indices of subarrays of size k
+    // Last valid start index is arr.count - k
+    for start in 0...(arr.count - k) {
+        
+        // Variable to store the sum of the current subarray
+        var newSum = 0
+        
+        // Calculate sum of elements from start to start + k - 1
+        for index in start..<(start + k) {
+            newSum += arr[index]
+        }
+        
+        // Update maxSum if the current subarray sum is larger
+        maxSum = max(maxSum, newSum)
+    }
+    
+    // Return the maximum sum found
+    return maxSum
+}
+
+// Test example
+print(maxSumSubarray(arr: [2, 1, 5, 1, 3, 2], k: 3))
 
