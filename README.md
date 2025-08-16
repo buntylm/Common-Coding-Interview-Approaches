@@ -8,15 +8,6 @@ The goal is to **start from brute force** (baseline correctness) and progressive
 * 🚀 **Optimize**: Move from brute force → efficient solutions step-by-step.
 * 🤝 **Share**: Help other developers prepare for technical interviews.
 
-## 📂 Structure
-Each approach will have:
-1. **Concept explanation**
-2. **Brute force baseline**
-3. **Optimized solution**
-4. **Example problems**
-5. **Complexity analysis**
-6. **Related patterns**
-
 ## 📜 Approaches Covered (Planned)
 | #  | Approach                      | Status        |
 | -- | ----------------------------- | ------------- |
