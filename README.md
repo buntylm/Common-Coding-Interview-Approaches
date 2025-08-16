@@ -22,7 +22,7 @@ Each approach will have:
 | -- | ----------------------------- | ------------- |
 | 1  | Brute Force Baseline          | ✅ |
 | 2  | Two Pointers                  | ✅ |
-| 3  | Sliding Window                | ⏳ Coming Soon |
+| 3  | Sliding Window                | ✅ |
 | 4  | Prefix Sum / Difference Array | ⏳ Coming Soon |
 | 5  | Hashing / Frequency Map       | ⏳ Coming Soon |
 | 6  | Binary Search (Value/Answer)  | ⏳ Coming Soon |
