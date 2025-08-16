@@ -1,49 +1,32 @@
 import Foundation
-/*
- Two Pointers (Sliding Window)
- -----------------------------
- General Idea:
-   Use two variables (pointers) to scan through an array/string
-   instead of nested loops. This reduces time complexity
-   from O(n^2) to O(n).
 
- Pointer Movement Styles:
-   - Move in the same direction (sliding window)
-   - Move towards each other (opposite ends)
-   - One fixed, one moving
-   - Across two arrays (merge-style)
+/*
+ Two Pointers (Converging / Opposite Ends)
+ ----------------------------------------
+ General Idea:
+   Use two pointers starting from opposite ends of a sorted array
+   to find a target pair or satisfy a condition without nested loops.
+
+ Pointer Movement:
+   - Left pointer starts at index 0
+   - Right pointer starts at index n-1
+   - Move pointers toward each other based on the condition (sum < target → move left, sum > target → move right)
 
  Key Advantages:
    - Time efficiency: O(n) instead of O(n^2)
-   - Space efficiency: usually in-place
+   - Space efficiency: O(1), in-place solution
 
  Problem Example:
-   Given an array of integers and a number `k`,
-   find the maximum sum of any contiguous subarray of size `k`
-   using the two pointers (sliding window) technique.
+   Given a sorted array of integers and a target sum, find two indices
+   whose elements sum to the target.
 */
 
-
-func maxSumOfSubArrayTwoPointers(arr: [Int], k: Int) -> Int {
-    guard arr.count >= k else { return 0 } // not enough elements
-    
-    var start = 0
-    var currentSum = 0
-    var maxSum = 0
-    
-    for end in 0..<arr.count {
-        currentSum += arr[end]  // expand window
-        
-        if end >= k - 1 {
-            maxSum = max(maxSum, currentSum)   // check max
-            currentSum -= arr[start]           // shrink window
-            start += 1
-        }
-    }
-    
-    return maxSum
+func twoSumSortedArray(arr: [Int], target: Int) -> [Int] {
+    return []
 }
 
 // Example
-print(maxSumOfSubArrayTwoPointers(arr: [2, 1, 5, 1, 3, 2], k: 3)) // 9
+let arr = [1, 2, 3, 4, 6]
+let target = 6
+print(twoSumSortedArray(arr: arr, target: target)) // [1, 3]
 

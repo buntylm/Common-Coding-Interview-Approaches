@@ -20,8 +20,8 @@ Each approach will have:
 ## 📜 Approaches Covered (Planned)
 | #  | Approach                      | Status        |
 | -- | ----------------------------- | ------------- |
-| 1  | Brute Force Baseline          | ✅ In Progress |
-| 2  | Two Pointers                  | ⏳ Coming Soon |
+| 1  | Brute Force Baseline          | ✅ |
+| 2  | Two Pointers                  | ✅ |
 | 3  | Sliding Window                | ⏳ Coming Soon |
 | 4  | Prefix Sum / Difference Array | ⏳ Coming Soon |
 | 5  | Hashing / Frequency Map       | ⏳ Coming Soon |
