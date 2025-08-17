@@ -14,8 +14,8 @@ The goal is to **start from brute force** (baseline correctness) and progressive
 | 1  | Brute Force Baseline          | ✅ |
 | 2  | Two Pointers                  | ✅ |
 | 3  | Sliding Window                | ✅ |
-| 4  | Prefix Sum / Difference Array | ⏳ Coming Soon |
-| 5  | Hashing / Frequency Map       | ⏳ Coming Soon |
+| 4  | Prefix Sum / Difference Array | ✅ |
+| 5  | Hashing / Frequency Map       | ✅ |
 | 6  | Binary Search (Value/Answer)  | ⏳ Coming Soon |
 | 7  | Sorting + Greedy              | ⏳ Coming Soon |
 | 8  | Stack / Monotonic Stack       | ⏳ Coming Soon |
